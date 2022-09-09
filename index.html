@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+
+        <title>Proyecto Final - Melisa Alvarez Terán</title>
+    </head>
+    <body>
+
+        <main>
+                
+            <header>
+                <div>
+                <h3 id="header-top">CONVERSOR DE UNIDADES</h3>
+                <h5 id="header-bottom">para pastelería</h5>
+                </div>
+            </header>
+                
+            <div id="middle">
+
+                <div id="converter">
+
+                    <div id="ingredientes">
+                        <button class="ingredient active" value="flour">harina</button>
+                        <button class="ingredient" value="sugar">azúcar</button>
+                        <button class="ingredient" value="butter">manteca</button>
+                        <button class="ingredient" value="water">líquido</button>
+                    </div>
+
+                    <div id="first-container">
+                        <input id="cantidadInicial" type="number" class="inputCant" value="0"></input>
+
+                        <select id="unidadInicial" class="form-select metric">
+                            <option value="grams" label="Gramos">Gramos</option>
+                            <option value="milliliters">Mililitros</option>
+                            <option value="cups">Tazas</option>
+                            <option value="oz">Onzas</option>
+                        </select>
+                    </div>
+
+                    <div id="second-container">
+                        <input id="cantidadFinal" type="number" class="inputCant" value="0"></input>
+
+                        <select id="unidadFinal" class="form-select metric">
+                            <option value="cups">Tazas</option>
+                            <option value="grams">Gramos</option>
+                            <option value="milliliters">Mililitros</option>
+                            <option value="oz">Onzas</option>
+                        </select>
+                    </div>
+
+                    <button id="save">Guardar Resultado</button>
+
+                </div>
+
+    
+                <div id="saved-display">
+                    <h2 class="historial-titulo">Historial de Resultados</h2>
+                    <div id="historial">
+                        <p id="mensaje">Aquí veras los resultados guardados</p>
+                    </div>
+                    <div class="tooltip">
+                        <input type="button" value="Borrar Historial" id="borrarHistorial">
+                    </div>
+                </div>    
+                        
+            </div>
+
+            <footer>
+                <img src="img/logoTotita.jpg" class="icon" />
+            </footer>
+        </main>
+
+        <script src="scripts/luxon.min.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
